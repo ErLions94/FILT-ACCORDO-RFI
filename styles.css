@@ -4,16 +4,25 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.scrollable-container {
-    width: 100vw;
+.horizontal-scroll-container {
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
 }
 
-.scrollable-content {
+.scrollable-item {
+    width: 300px; /* Larghezza predefinita per ciascun div */
+    min-width: 300px; /* Imposta una larghezza minima */
+    box-sizing: border-box; /* Assicura che il padding non influenzi la larghezza effettiva */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
     padding: 20px;
-    white-space: normal;
+    margin: 10px;
+    overflow: hidden; /* Nasconde il testo che fuoriesce dal div */
+}
+
+.scrollable-item p {
+    margin: 0; /* Rimuove il margine predefinito dal paragrafo */
 }
 
 /* Altri stili possono essere aggiunti a seconda delle esigenze del design */
