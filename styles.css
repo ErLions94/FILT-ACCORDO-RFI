@@ -4,25 +4,19 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.horizontal-scroll-container {
-    overflow-x: auto;
+.slider-container {
+    overflow-x: hidden;
     white-space: nowrap;
     display: flex;
 }
 
-.scrollable-item {
-    width: 300px; /* Larghezza predefinita per ciascun div */
-    min-width: 300px; /* Imposta una larghezza minima */
-    box-sizing: border-box; /* Assicura che il padding non influenzi la larghezza effettiva */
+.slide {
+    min-width: 100vw; /* Imposta la larghezza del div in modo che ne sia visibile solo uno alla volta */
+    box-sizing: border-box;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px;
-    overflow: hidden; /* Nasconde il testo che fuoriesce dal div */
-}
-
-.scrollable-item p {
-    margin: 0; /* Rimuove il margine predefinito dal paragrafo */
 }
 
 /* Altri stili possono essere aggiunti a seconda delle esigenze del design */
