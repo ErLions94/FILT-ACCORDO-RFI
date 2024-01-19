@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.scrollable-container {
+    width: 100vw;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+.scrollable-content {
+    padding: 20px;
+    white-space: normal;
+}
+
+/* Altri stili possono essere aggiunti a seconda delle esigenze del design */
