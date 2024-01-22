@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VADEMECUM ACCORDO NAZIONALE INFRASTRUTTURE RFI</title>
+</head>
+<body>
+    <style>
+        
+    @media (max-width: 767px) {
+        .sopra {display: none;}
+        .sotto {display: none;}
+        .post {height: 100vh;}
+    }
+
+    @media (max-width: 480px) {
+        .sopra {display: unset;}
+        .sotto {display: unset;}
+        .post {height: 50vh;}
+    }
+    
+    </style>
+    <div class="sopra">
+        <h1>Agorà FILT</h1>
+    </div>
+    <div class="testi">
+        <div class="post">
+            <div class="colonne">
+                <p><b>VADEMECUM ACCORDO NAZIONALE INFRASTRUTTURE RFI</b></p>
+                <p id="dynamic-text1"></p>
+            </div>
+        </div>
+        <div class="post"></div>
+    </div>
+    <div class="sotto">
+        <p>Iscriviti alla FILT</p>
+    </div>
+</body>
+<script>
+    const dynamicText = document.getElementById('dynamic-text1');
+
+    function updateTextBasedOnScreenWidth() {
+        const windowWidth = window.innerWidth;
+
+        if (windowWidth < 480) {
+            dynamicText1.textContent = "Il presente documento è una sintesi rispetto alcuni punti salienti dell'Accordo sulla riorganizzazione del settore Infrastrutture di RFI.<br>L'<a href="2024.01.10_ACCORDO_Manutenzione_Infrastrutture.pdf">accordo sottoscritto</a>";
+        } else {
+            dynamicText1.textContent = "Dopo gli scioperi del 14/04/2023 e del 13/07/2023, solo una parte degli obiettivi sono stati raggiungi e la vertenza nei settori equipaggi e manutenzione di Trenitalia resta aperta. Scopri i risultati ottenuti nei verbali firmati con Trenitalia e con il Gruppo FS";
+        }
+    }
+
+    updateTextBasedOnScreenWidth();
+
+    window.addEventListener('resize', updateTextBasedOnScreenWidth);
+</script>
+</html>
