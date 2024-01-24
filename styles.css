@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.text {
+    display: none;
+    cursor: pointer;
+}
+
+.small-screen-text {
+    display: block;
+}
+
+@media only screen and (min-width: 481px) {
+    .large-screen-text {
+        display: block;
+    }
+
+    .small-screen-text {
+        display: none;
+    }
+}
