@@ -1,29 +1,13 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-.post {
-    display: flex;
-    box-sizing: border-box;
-    scroll-snap-align: start;
-    border: 1px solid black;
-    background-image: url(spirale.jpeg);
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    width: 100vw;
-    flex: 0 0 auto;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.testi {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-}
-
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Il tuo sito</title>
+</head>
+<body>
+  <div id="testoCambiante" onclick="cambiaTesto()">Clicca qui per cambiare il testo</div>
+</body>
+</html>
